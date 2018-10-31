@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+
+		<form action="/login/" method="post" > {% csrf_token %} 
+			<p>
+				<input type="text" name="username" />
+			</p>
+			<p>
+				<input type="password" name="password" />
+			</p>
+			<p>
+				<button>登陆</button>
+				<!--<input type="submit" value="提交"/>-->
+			</p>
+		</form>
+		<a href="/registered/">注册</a>
+	</body>
+</html>
